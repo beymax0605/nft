@@ -22,11 +22,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     hardhat: {
       chainId: 1337
     },
-//  unused configuration commented out for now
-//  mumbai: {
-//    url: "https://rpc-mumbai.maticvigil.com",
-//    accounts: [process.env.privateKey]
-//  }
+// unused configuration commented out for now
+    mumbai: {
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [process.env.privateKey]
+    }
   },
   solidity: {
     version: "0.8.4",
